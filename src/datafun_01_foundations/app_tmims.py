@@ -46,15 +46,15 @@ MY_ANALYTICS_COMPANY: Final[str] = "DataFun Analytics"
 MY_EMPLOYEE_COUNT: Final[int] = 150
 
 # See the other file for examples.
-MY_SPECIALTY: Final[str] = "Data Science"
-MY_YEARS_EXPERIENCE: Final[int] = 8
-MY_SALARY_FACTOR: Final[float] = 1.25
-IS_MANAGER: Final[bool] = False
-MY_SKILLS: Final[list[str]] = [
-    "Python",
-    "SQL",
-    "Machine Learning",
-    "Data Visualization",
+MY_OCCUPATION: Final[str] = "High School Mathematics Teacher"
+MY_YEARS_EXPERIENCE: Final[int] = 31
+MY_AVERAGE_UNDERGRAD_GPA: Final[float] = 3.93
+IS_CERTIFIED: Final[bool] = True
+MY_TEACHING_STRATEGIES: Final[list[str]] = [
+    "Problem Solving",
+    "Guided Practice",
+    "Critical Thinking Exercises",
+    "Multiple Representations",
 ]
 
 
@@ -72,14 +72,14 @@ def get_summary() -> str:
     # all of the global variables you declared above, each on its own line,
     # labeled clearly with descriptive text.
     summary: str = f"""
-    Custom Information:
-        Company name: {MY_ANALYTICS_COMPANY}
-        Employee count: {MY_EMPLOYEE_COUNT}
-        Specialty: {MY_SPECIALTY}
-        Years experience: {MY_YEARS_EXPERIENCE}
-        Salary factor: {MY_SALARY_FACTOR:.2f}
-        Is manager: {IS_MANAGER}
-        Skills: {', '.join(MY_SKILLS)}
+    My Professional Information:
+        Company: {MY_ANALYTICS_COMPANY}
+        Employee Count: {MY_EMPLOYEE_COUNT}
+        Occupation: {MY_OCCUPATION}
+        Years of Experience: {MY_YEARS_EXPERIENCE}
+        Undergraduate GPAC: {MY_AVERAGE_UNDERGRAD_GPA:.2f}
+        Is Certified : {IS_CERTIFIED}
+        Teaching Strategies: {MY_TEACHING_STRATEGIES}
     """
 
     LOG.info("Generated formatted multi-line SUMMARY string.")
@@ -98,26 +98,17 @@ def get_statistics() -> str:
     Returns: - a formatted multi-line string.
     """
     # Initialize sample data - snowfall measurements in inches.
-    # REQ: Vary ONE of the sample data values.
-    # See how the statistics change when you do.
-    snowfall_inches: list[float] = [2.5, 3.5, 6.0, 5.5, 6.5]
+    snowfall_inches: list[float] = [2.5, 3.5, 2.3, 5.5, 6.5]
 
     # Calculate descriptive statistics below - see other file for examples.
 
-    # Example: Calculate total snowfall.
     total: float = sum(snowfall_inches)
-
-    # Example : Calculate count of measurements.
     count: int = len(snowfall_inches)
 
-    # Calculate minimum and maximum snowfall.
     minimum: float = min(snowfall_inches) if count > 0 else 0.0
     maximum: float = max(snowfall_inches) if count > 0 else 0.0
 
-    # Use the statistics module to calculate average.
     average: float = statistics.mean(snowfall_inches) if count > 0 else 0.0
-
-    # Calculate standard deviation using the statistics module.
     stdev: float = statistics.stdev(snowfall_inches) if count > 1 else 0.0
 
     # Build a formatted multi-line string using f and triple quotes.

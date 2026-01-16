@@ -12,16 +12,11 @@
 #
 # WHY-FILE: This data file provides the site structure and settings
 
-site_name: "Project Documentation"
-
-#TODO: Change to your GitHub Pages URL.
+site_name: "Professional Analytics Project"
 site_url: https://tmims71-ctrl.github.io/datafun-01-foundations/
-
-#TODO: Change to your GitHub repository URL.
 repo_url: https://github.com/tmims71-ctrl/datafun-01-foundations
-
-site_description: Project documentation.tammymims
-
+site_description: Project documentation
+site_author: Tammy Mims
 docs_dir: docs
 site_dir: site
 
@@ -29,7 +24,6 @@ extra:
   # WHY: Social links are optional polish; safe to remove without breaking docs.
   social:
     - icon: fontawesome/brands/github
-      #TODO: Change to your GitHub repository URL.
       link: https://github.com/tmims71-ctrl/datafun-01-foundations
 
 # WHY: Material theme is industry standard, well-documented, and low maintenance.
