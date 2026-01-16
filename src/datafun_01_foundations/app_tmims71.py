@@ -1,6 +1,6 @@
-"""app_yourname.py - Project script.
+"""app_tmims.py - Project script.
 
-Author: Your Name or Alias
+Author: Tammy Mims
 Date: 2026-01
 
   Practice key Python skills related to:
