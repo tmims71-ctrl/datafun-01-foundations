@@ -58,7 +58,7 @@ Use the instructions above to get it ALL set up correctly.
 Most people open a terminal on their machine (not VS Code), open in their Repos folder and run:
 
 ```shell
-git clone https://github.com/YOURACCOUNT/datafun-01-foundations
+git clone https://github.com/tmims71-ctrl/datafun-01-foundations
 
 cd datafun-01-foundations
 code .
@@ -115,7 +115,7 @@ In the same VS Code terminal, run any Python source files:
 
 ```shell
 uv run python src/datafun_01_foundations/app_case.py
-uv run python src/datafun_01_foundations/app_yourname.py
+uv run python src/datafun_01_foundations/app_tmims71.py
 ```
 
 If a command fails, verify:
